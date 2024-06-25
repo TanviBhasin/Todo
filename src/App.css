@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, #283048, #859398);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.app-container {
+  flex: 1;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 40px;
+  margin-left: 20px;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  margin-right: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background: transparent;
+  color: #fff;
+}
+input[type="text"]::placeholder {
+  color: gainsboro;
+}
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #fff;
+}
+button {
+  padding: 10px 20px;
+  background: #ffa535;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+button:hover {
+  background: #f79218;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 8px;
+  margin: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  margin-top: 1.5vh;
+  color: white;
+}
+li:nth-child(even) {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+li .left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+li .right {
+  display: flex;
+  align-items: center;
+}
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+span {
+  flex: 1;
+}
+button.edit-btn,
+button.delete-btn {
+  margin-left: 5px;
+
+  border-radius: 40px;
+}
+button.edit-btn:hover {
+  background: #069b53;
+}
+
+button.delete-btn:hover {
+  background: #f72f43;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+  .image-container {
+    display: none;
+  }
+  .app-container {
+    margin: 0 auto;
+    padding: 15px;
+    height: auto;
+  }
+  form {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    margin: 0 0 10px 0;
+  }
+}
+@media (max-width: 480px) {
+  .app-container {
+    padding: 10px;
+  }
+}
