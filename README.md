@@ -5,11 +5,11 @@ The To-Do App is live and ready for you to explore! Visit [To-Do List](https://t
 # App Overview
 ![Screenshot 2024-06-08 215838](https://github.com/JadhavPrasad21/QuadB-Tech-Assignment/assets/86917788/e86a5447-ef42-4512-9205-fc429884ddc0)
 
-# How to start?
-- navigate to project directory
-- open command prompt
-- then give command: npm i
-- then give command: npm start
+# Run Application
+- Navigate to project directory
+- Open command prompt
+- Then type: npm i
+- Then type: npm start
 
 # Features
 - Developed a React app with functional components, utilizing Redux for state management.
